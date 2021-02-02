@@ -7,4 +7,5 @@ new text file has added for learning purporse
 
 this was first lab session
 
-pull request testing
+this is new message
+
