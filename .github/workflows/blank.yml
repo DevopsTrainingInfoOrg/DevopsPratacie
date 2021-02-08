@@ -1,25 +1,33 @@
-- name: Action to run java checkstyle
+- name: Checkstyle for Java
   # You may pin to the exact commit or the version.
-  # uses: nitinsh99/checkstyle-action@d18a1dbe6312264fa572e638fc3211714a892f46
-  uses: nitinsh99/checkstyle-action@1.0.0
+  # uses: dbelyaev/action-checkstyle@31c55e0f157d12ebffed0021e7af5922e3a8b1f6
+  uses: dbelyaev/action-checkstyle@v0.3.2
   with:
-    # GITHUB_TOKEN.
+    # GITHUB_TOKEN
     github_token: # optional, default is ${{ github.token }}
-    # Report level for reviewdog [info,warning,error]
-    level: # optional, default is info
-    # Reporter of reviewdog command [github-pr-check,github-pr-review]
-    reporter: # optional, default is github-pr-check
-    # Filtering for the reviewdog command [added,diff_context,file,nofilter].
-Default is `added`.
-
-    filter_mode: # optional, default is added
-    # Exit code for reviewdog when errors are found [true,false]
-Default is `false`.
-
-    fail_on_error: # optional, default is false
-    # Checkstyle config file
-    checkstyle_config: # default is google_checks.xml
     # Working directory relative to the root directory.
     workdir: # optional, default is .
-    # Tool name to use for reviewdog reporter
-    tool_name: # optional, default is reviewdog
+    # Report level for reviewdog [info, warning, error]
+    level: # optional, default is info
+    # Reporter of reviewdog command [github-pr-check, github-pr-review].
+    reporter: # optional, default is github-pr-check
+    # Filtering mode for the reviewdog command [added, diff_context, file, nofilter].
+    Default is added.
+
+    filter_mode: # optional, default is added
+    # Exit code for reviewdog when errors are found [true, false]
+    Default is `false`.
+
+    fail_on_error: # optional, default is false
+    # Additional reviewdog flags
+    reviewdog_flags: # optional, default is 
+    # Checkstyle configuration specifies which ruleset to apply during scan.
+There are two built-in configurations in checkstyle: [google_checks.xml, sun_checks.xml].
+google_checks.xml configures Checkstyle for the Google coding conventions (https://google.github.io/styleguide/javaguide.html)
+sun_checks.xml configures Checkstyle for the Sun coding conventions (https://www.oracle.com/java/technologies/javase/codeconventions-contents.html)
+
+    checkstyle_config: # default is google_checks.xml
+    # Checkstyle version to be used during analysis.
+For a list of available version numbers go to [Checkstyle release page](https://github.com/checkstyle/checkstyle/releases/).
+
+    checkstyle_version: # optional, default is 8.38
