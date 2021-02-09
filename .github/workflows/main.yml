@@ -36,6 +36,6 @@ jobs:
          
       - name: testing user add command
         run: |
-          chmod 777 useradd.sh
-          ./useradd.sh 
+          chmod 777 adduser.sh
+          ./adduser.sh 
           javac hello.java
