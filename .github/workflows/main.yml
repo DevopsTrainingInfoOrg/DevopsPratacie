@@ -33,4 +33,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          javac Hellow.java
+         
+      - name: testing user add command
+        run: |
+          chmod 777 useradd.sh
+          ./useradd.sh 
+          javac hello.java
