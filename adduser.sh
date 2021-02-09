@@ -1,3 +1,7 @@
 !#/bin/sh
 
-useradd naveen
+echo "my file">test.txt
+
+pwd
+
+cat test.txt
