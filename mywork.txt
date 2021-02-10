@@ -1,3 +1,4 @@
+testing the conflict process
 https://mvnrepository.com/artifact/ai.foremast.metrics/foremast-spring-4x-adoption/0.1.6
 
 <!-- https://mvnrepository.com/artifact/ai.foremast.metrics/foremast-spring-4x-adoption -->
@@ -7,7 +8,7 @@ https://mvnrepository.com/artifact/ai.foremast.metrics/foremast-spring-4x-adopti
     <version>0.1.6</version>
 </dependency>
 
-
+midof the file changes 
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-registry-prometheus</artifactId>
@@ -19,3 +20,4 @@ https://github.com/intuit/foremast/tree/master/foremast-metrics/foremast-spring-
 
 https://github.com/intuit/foremast/tree/master/foremast-metrics/foremast-spring-4x-k8s-metrics/src/main/resources
 
+endl of the files 
