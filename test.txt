@@ -1,4 +1,4 @@
-https://mvnrepository.com/artifact/ai.foremast.metrics/foremast-spring-4x-adoption/0.1.6
+https://mvnrepository.com/artifact/ai.foremast.metrics/foremast11-spring-4x-adoption/0.1.6
 
 <!-- https://mvnrepository.com/artifact/ai.foremast.metrics/foremast-spring-4x-adoption -->
 <dependency>
